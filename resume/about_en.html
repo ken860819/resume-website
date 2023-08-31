@@ -138,6 +138,24 @@
                 padding: 0 2%;
             }
         }
+            /* ...其他CSS... */
+
+            body, div, h1, h2, p, table, th, td {
+                box-sizing: border-box;
+            }
+
+            .ducation-title, .introduction-title {
+                /* ...其他樣式... */
+                max-width: 100%;  /* 確保不超出其父元素 */
+                overflow: hidden;  /* 防止內容溢出 */
+            }
+
+            .introduction-container .introduction {
+                /* ...其他樣式... */
+                max-width: 100%;
+                overflow: hidden;  
+            }
+
 
 
     </style>
