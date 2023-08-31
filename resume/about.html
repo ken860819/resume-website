@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://img.onl/79wykd');
+            background: url('https://img.onl/79wykd') no-repeat center center fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             margin: 0;
             padding: 0;
         }
 
-        header {
+        header, .introduction-container, footer {
             text-align: center;
             margin: 20px 0;
         }
@@ -38,27 +37,21 @@
         }
 
         .school {
-            background-color: #c1e5c1; /* 淡綠色 */
+            background-color: #c1e5c1;
         }
 
-        .ducation-title, .introduction-title {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
+        .title-box {
+            background-color: rgba(255, 255, 255, 0.7);
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 5px 10px;  
-            margin: 0 auto 20px;  /* 修改了 margin 的設定，使其在水平方向居中 */
-            width: 20%;  /* 設定了固定的寬度，你可以根據需要調整 */
-        }
-
-        .introduction-container {
-            text-align: center;
-            margin: 20px 0;
+            margin: 0 auto 20px;
+            width: 20%;
         }
 
         .introduction {
-            margin: 0 auto 2em;  /* 修改了 margin 的設定，使其在水平方向居中 */
-            width: 70%;  /* 設定了固定的寬度，你可以根據需要調整 */
+            margin: 0 auto 2em;
+            width: 70%;
             text-align: left;
             background-color: #f2f2f2c7;
             padding: 15px 20px;
@@ -70,119 +63,127 @@
             padding: 0 5%;
         }
 
-        .footer-container {
-            padding: 15px 0;
-            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
-            text-align: center;
-            border-top: 1px solid #ddd;
-        }
-
         .footer-link {
-            color: #000;
+            color: #fff;
             text-decoration: none;
             font-weight: 600;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff9999;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
         }
 
         .footer-link:hover {
-            text-decoration: underline;
-        }
-        .footer-container {
-            display: flex;
-            justify-content: center; /* 將按鈕置中 */
-            gap: 10px; /* 在按鈕之間創建一些間隙 */
+            background-color: #ff7575;
         }
 
-        .footer-link {
-            display: inline-block;
-            padding: 10px 20px; /* 填充，使按鈕大小合適 */
-            background-color: #ff9999; /* 淺粉紅色背景 */
-            border-radius: 15px; /* 圓角效果 */
-            text-decoration: none; /* 去除下劃線 */
-            color: #fff; /* 文字顏色 */
-            transition: background-color 0.3s ease; /* 過渡效果 */
-        }
-
-            .footer-link:hover {
-                background-color: #ff7575; /* 深一點的粉紅色為滑鼠懸停狀態 */
+        @media (max-width: 992px) {
+            .introduction, .title-box {
+                width: 80%; 
             }
-/* ...當前的CSS... */
+        }
 
-/* 媒體查詢，針對寬度小於600px的裝置 */
-@media (max-width: 600px) {
-    header h1, .introduction-title h2 {
-        font-size: 1.5rem; /* 縮小標題大小 */
-    }
-    
-    table, th, td {
-        font-size: 0.8rem; /* 縮小表格字體大小 */
-        padding: 5px; /* 減少填充 */
-    }
+        @media (max-width: 768px) {
+            header h1, .introduction-title h2 {
+                font-size: 1.5rem;
+            }
 
-    .introduction, .ducation-title {
-        width: 90%; /* 擴大寬度使其更適合小屏幕 */
-    }
+            table, th, td {
+                font-size: 0.8rem;
+                padding: 5px;
+            }
 
-    .introduction {
-        font-size: 0.9rem; /* 縮小自我介紹的字體大小 */
-    }
+            .introduction, .title-box {
+                width: 95%;
+            }
 
-    .footer-link {
-        padding: 8px 16px; /* 調整頁腳連結的填充大小 */
-        font-size: 0.9rem; /* 調整頁腳連結的字體大小 */
-    }
-}
+            .introduction {
+                font-size: 0.9rem;
+            }
+
+            .footer-link {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-link {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+
+            .introduction, .title-box {
+                width: 100%;
+            }
+
+            main {
+                padding: 0 2%;
+            }
+        }
 
     </style>
 </head>
 
 <body>
     <header>
-        <div class="ducation-title">
+        <div class="title-box">
             <h1>學歷(Education)</h1>
         </div>
     </header>
 
     <main>
-        <!-- Table Content -->
         <table>
-            <tr>
-                <th>學校(School)</th>
-                <th>學位(Degree)</th>
-                <th>科系(Department)</th>
-                <th>狀態(Status)</th>
-                <th>時間(Time)</th>
-            </tr>
-                <tr class="school">
-                    <td>國立陽明交通大學 (National Yang Ming Chiao Tung University)</td>
-                    <td>碩士(Master)</td>
-                    <td>醫務管理研究所(Institute of Hospital and Health Care Administration)</td>
-                    <td>畢業(Graduate)</td>
-                    <td>09/2021 - 08/2023</td>
+            <thead>
+                <tr>
+                    <th>學校(School)</th>
+                    <th>學位(Degree)</th>
+                    <th>科系(Department)</th>
+                    <th>狀態(Status)</th>
+                    <th>時間(Time)</th>
                 </tr>
-                <tr class="school">
-                    <td>銘傳大學 (Ming Chuan University)</td>
-                    <td>學士(Bachelor)</td>
-                    <td>醫療資訊與管理學系(Healthcare Information & Management)</td>
-                    <td>畢業(Graduate)</td>
-                    <td>09/2015 - 07/2019</td>
-                </tr>
-                <tr class="school">
-                    <td>臺北市市立明倫高中 (Taipei Municipal Ming Lun High School)</td>
-                    <td></td>
-                    <td></td>
-                    <td>畢業(Graduate)</td>
-                    <td>09/2012 - 07/2015</td>
-                </tr>
-            <!-- ... Your Table Rows ... -->
+            </thead>
+            <tbody>
+                <!-- Repeated school records can be added here -->
+                    <!-- ... school details ... -->
+                    <tr class="school">
+                        <td>國立陽明交通大學 (National Yang Ming Chiao Tung University)</td>
+                        <td>碩士(Master)</td>
+                        <td>醫務管理研究所(Institute of Hospital and Health Care Administration)</td>
+                        <td>畢業(Graduate)</td>
+                        <td>09/2021 - 08/2023</td>
+                    </tr>
+                    <tr class="school">
+                        <td>銘傳大學 (Ming Chuan University)</td>
+                        <td>學士(Bachelor)</td>
+                        <td>醫療資訊與管理學系(Healthcare Information & Management)</td>
+                        <td>畢業(Graduate)</td>
+                        <td>09/2015 - 07/2019</td>
+                    </tr>
+                    <tr class="school">
+                        <td>臺北市市立明倫高中 (Taipei Municipal Ming Lun High School)</td>
+                        <td></td>
+                        <td></td>
+                        <td>畢業(Graduate)</td>
+                        <td>09/2012 - 07/2015</td>
+                    </tr>
+            </tbody>
         </table>
 
-        <!-- Introduction -->
-        <div class="introduction-container">
-            <div class="introduction-title">
+        <section class="introduction-container">
+            <div class="title-box">
                 <h2>自我介紹(Introduction)</h2>
             </div>
-            <div class="introduction">
-                <p>     各位面試官好，我是鐘啟華，很高興有機會參加這次面試。我畢業於陽明交通大學醫務管理研究所，
+            <article class="introduction">
+                <p> 
+                    各位面試官好，我是鐘啟華，很高興有機會參加這次面試。我畢業於陽明交通大學醫務管理研究所，
                     主修機器學習與數據分析。在我求學的過程中，我不僅注重學術成績，更是努力培養數據分析的專業能力。
                     我曾在醫院擔任研究助理，這段經歷讓我深刻體會到數據的價值和洞察力。
                     因此，我在進入陽明交通大學就讀時，選擇了機器學習作為主要的研究方向，
@@ -192,18 +193,16 @@
                     我也有擔任畢業紀念冊的負責人，這鍛鍊了我的組織和協調能力。
                     我期待能透過這次面試，更深入地向您展示我的專業知識和潛力。
                     謝謝您的時間，我期待與您進一步交流。
-                </p><!-- ... introduction content ... -->
-            </div>
-        </div>
+                </p>
+            </article>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-container">
+        <div>
             <a href="resume.html" class="footer-link">返回首頁(Return to homepage)</a>
             <a href="about_en.html" class="footer-link">English Version</a>
         </div>
-
     </footer>
 </body>
 </html>
