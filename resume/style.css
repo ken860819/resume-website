@@ -1,76 +1,60 @@
-/* styles.css */
-
-/* 全局樣式設定 */
-* {
+body {
+    font-family: 'Arial', sans-serif; /* 使用Arial字體, 若無則使用sans-serif字體 */
+    background-color: #f7f7f7; /* 使用一個淺灰色背景 */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: white;
-    line-height: 1.6;
-}
-
-header {
+header, footer {
+    background-color: #333; /* 使用深灰色背景 */
+    color: white; /* 文字顏色設為白色 */
     text-align: center;
-    padding: 20px;
-    background-color: #1E1E1E;
-    color: white;
+    padding: 20px 0;
 }
 
 main {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .section-bg {
-    background-image: url('https://img.onl/CWX1m'); /* 使用相對路徑 */
-    background-size: cover;
-    background-position: center;
+    background-color: white; /* 設為白色背景 */
+    margin: 20px;
     padding: 20px;
-    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* 添加陰影 */
+    border-radius: 5px; /* 圓角 */
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center; /* 新增文字置中 */
-    color: rgb(255, 255, 255); /* 將顏色改為黑色 */
-}
-
-p {
-    font-size: 16px;
-    color: #080808; /* 修改文字顏色為深灰色 */
-    text-align: center; /* 將段落文字置中 */
-}
-
-a {
-    color: #03DAC5;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* 將經歷區域的背景顏色改為綠色 */
-section:nth-child(2) {
-    background-color: #b9deb9; /* 使用綠色 */
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #23e45d;
-    color: white;
-    border-radius: 0 0 5px 5px;
-}
 .center-img {
-    display: block;
-    margin: 0 auto;
+    width: 60%; /* 調整圖片大小 */
+    max-width: 300px; /* 設置最大寬度 */
+    border-radius: 5px; /* 圓角 */
+}
+
+.more-link {
+    display: block; /* 讓連結成為block元素 */
+    margin: 10px auto; /* 居中連結 */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px; /* 圓角 */
+    width: 150px; /* 固定寬度 */
+    text-decoration: none; /* 移除下劃線 */
+}
+
+.more-link:hover {
+    background-color: #555; /* 當滑鼠懸停時深化背景顏色 */
+}
+.homepage-link {
+    color: rgb(26, 189, 204);  /* 這裡可以換成你想要的顏色，例如: #3498db 是一種深藍色 */
+    text-decoration: none; /* 這會移除連結下的底線 */
+}
+
+.homepage-link:hover {
+    color: blue; /* 當滑鼠移到連結上時的顏色 */
+    text-decoration: underline; /* 當滑鼠移到連結上時，會顯示底線 */
 }

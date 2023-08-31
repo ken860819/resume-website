@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中文摘要</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 50px auto;
+            max-width: 800px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1, h3 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            padding: 5px 0;
+        }
+
+        strong {
+            color: #444;
+        }
+
+        /* Added styles for buttons */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>中文摘要</h1>
+
+    <p><strong>摘要 (Abstract)</strong> </p>
+    <a href="resume.html" class="btn">返回首頁</a>
+    <a href="EnglishAbstract.html" class="btn">英文摘要（English Abstract）</a>
+
+    <h3>研究背景:</h3>
+    <p>隨著科技的日新月異，人工智慧儼然成為了現今最熱門的話題，處於第四次工業革命的我們，逐步將人工智慧的運用加入各個產業中，無非是看準了人工智慧的方便性及運算能力，也能大大的增加工作效率。在醫療產業也不例外，近期越來越多智慧醫療等議題的出現，就是希望能透過人工智慧在醫療上能有顯著上實質的幫助。因此本研究旨在透過人工智慧的應用，來對家庭醫學科中的居家醫療患者進行醫療資源分配應用的探討，期盼能即時針對居家醫療患者在居家醫療的三個時期:居家醫療(S1)、重度居家醫療(S2)、安寧療護(S3)，進行醫療的介入，幫助醫師能夠對患者進行有效的醫療照護與資源分配，以達到資源最大效益化。</p>
+
+    <h3>研究方法:</h3>
+    <p>本研究使用自北市聯合醫院的居家醫療資料，其中包含了 HIS 檔案中的住院檔案(IP)、門診檔案(OP)和健保資訊網服務平台服務系統(VPN)這三個檔案，透過 SAS9.4 進行資料整理與描述性分析，再使用 Python 程式設計的 scikit-learn 作為撰寫程式的基礎架構，使用基於 RNN 模型的 LSTM 與 GRU 模型當作此次研究的深度學習模型，比較兩個模型在預測上的分析程度，在研究中的訓練結果以 accuracy、precision、recall 和 ROC curve 當作模型訓練的指標，來探討使用人工智慧對於預測居家醫療患者進行醫療服務使用的可行性。</p>
+
+    <h3>研究結果:</h3>
+    <p>根據研究結果顯示，本次研究對象為 4343 人，平均年齡為 85.04±11.47，其中 男性佔據了 45.8%，女性佔據了 54.2%，在模型預測上發現當參數比較少時 GRU 有相對良好的結果，而在參數較多的情況 LSTM 的結果優於 GRU，其中在看診次數大於 10 次以上的條件下 LSTM 的 accuracy 為 0.73、precision 為 0.72、recall 為 0.69 而 ROC CURVE 為 0.86，這也表示了運用人工智慧對居家醫療患者進行醫療服務使用的預測上具有一定的準確度。</p>
+
+    <h3>結論:</h3>
+    <p>本研究結果顯示出了使用深度學習對居家醫療照護階段的預測有一定的準確度，並且可以作為醫師在居家醫療臨床上的輔助工具，使得醫師有更多可以參考的資訊，讓居家醫療在醫療資源上的分配能有更完善的規劃。</p>
+
+    <h3>關鍵字:</h3>
+    <p>居家醫療、藍鵲計畫、全民健康保險居家醫療照護整合計畫、人工智慧、深度學習、時間序列。</p>
+
+</body>
+
+</html>
