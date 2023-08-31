@@ -7,15 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('https://img.onl/79wykd');
+            background: url('https://img.onl/79wykd') no-repeat center center fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             margin: 0;
             padding: 0;
         }
 
-        header {
+        header, .introduction-container, footer {
             text-align: center;
             margin: 20px 0;
         }
@@ -38,56 +36,47 @@
         }
 
         .school {
-            background-color: #c1e5c1; /* 淡綠色 */
+            background-color: #c1e5c1;
         }
 
-        .ducation-title, .introduction-title {
-            text-align: center;
-            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
+        .title-box {
+            background-color: rgba(255, 255, 255, 0.7);
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 5px 10px;  
-            margin: 0 auto 20px;  /* 修改了 margin 的設定，使其在水平方向居中 */
-            width: 20%;  /* 設定了固定的寬度，你可以根據需要調整 */
-        }
-
-        .introduction-container {
-            text-align: center;
-            margin: 20px 0;
+            margin: 0 auto 20px;
+            width: 20%;
         }
 
         .introduction {
-            margin: 0 auto 2em;  /* 修改了 margin 的設定，使其在水平方向居中 */
-            width: 70%;  /* 設定了固定的寬度，你可以根據需要調整 */
+            margin: 0 auto 2em;
+            width: 70%;
             text-align: left;
             background-color: #f2f2f2c7;
             padding: 15px 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         main {
             padding: 0 5%;
         }
 
-
-        .footer-container {
-            display: flex;
-            justify-content: center; /* 將按鈕置中 */
-            gap: 10px; /* 在按鈕之間創建一些間隙 */
-        }
         .footer-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
             display: inline-block;
-            padding: 10px 20px; /* 設定填充，使按鈕大小適中 */
-            background-color: #34495e; /* 深藍灰背景 */
-            border-radius: 15px; /* 圓角效果 */
-            text-decoration: none; /* 去除文字下劃線 */
-            color: #fff; /* 文字顏色 */
-            transition: background-color 0.3s ease; /* 設定背景色的過渡效果 */
+            padding: 10px 20px;
+            background-color: #34495e;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
         }
 
         .footer-link:hover {
-            background-color: #2c3e50; /* 滑鼠懸停時的深藍灰色 */
+            background-color: #2c3e50;
         }
+
         @media (max-width: 992px) {
             .introduction, .title-box {
                 width: 80%; 
@@ -138,38 +127,18 @@
                 padding: 0 2%;
             }
         }
-            /* ...其他CSS... */
-
-            body, div, h1, h2, p, table, th, td {
-                box-sizing: border-box;
-            }
-
-            .ducation-title, .introduction-title {
-                /* ...其他樣式... */
-                max-width: 100%;  /* 確保不超出其父元素 */
-                overflow: hidden;  /* 防止內容溢出 */
-            }
-
-            .introduction-container .introduction {
-                /* ...其他樣式... */
-                max-width: 100%;
-                overflow: hidden;  
-            }
-
-
 
     </style>
 </head>
 
 <body>
     <header>
-        <div class="ducation-title">
+        <div class="title-box">
             <h1>Education</h1>
         </div>
     </header>
 
     <main>
-        <!-- Table Content -->
         <table>
             <thead>
                 <tr>
@@ -181,50 +150,49 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="school">
-                    <td>National Yang Ming Chiao Tung University</td>
-                    <td>Master</td>
-                    <td>Institute of Hospital and Health Care Administration</td>
-                    <td>Graduate</td>
-                    <td>09/2021 - 08/2023</td>
-                </tr>
-                <tr class="school">
-                    <td>Ming Chuan University</td>
-                    <td>Bachelor</td>
-                    <td>Healthcare Information & Management</td>
-                    <td>Graduate</td>
-                    <td>09/2015 - 07/2019</td>
-                </tr>
-                <tr class="school">
-                    <td>Taipei Municipal Ming Lun High School</td>
-                    <td></td>
-                    <td></td>
-                    <td>Graduate</td>
-                    <td>09/2012 - 07/2015</td>
-                </tr>
+                <!-- Repeated school records can be added here -->
+                    <!-- ... school details ... -->
+                    <tr class="school">
+                        <td>National Yang Ming Chiao Tung University</td>
+                        <td>Master</td>
+                        <td>Institute of Hospital and Health Care Administration</td>
+                        <td>Graduate</td>
+                        <td>09/2021 - 08/2023</td>
+                    </tr>
+                    <tr class="school">
+                        <td>Ming Chuan University</td>
+                        <td>Bachelor</td>
+                        <td>Healthcare Information & Management</td>
+                        <td>Graduate</td>
+                        <td>09/2015 - 07/2019</td>
+                    </tr>
+                    <tr class="school">
+                        <td>Taipei Municipal Ming Lun High School</td>
+                        <td></td>
+                        <td></td>
+                        <td>Graduate</td>
+                        <td>09/2012 - 07/2015</td>
+                    </tr>
             </tbody>
-            <!-- ... Your Table Rows ... -->
         </table>
 
-        <!-- Introduction -->
-        <div class="introduction-container">
-            <div class="introduction-title">
+        <section class="introduction-container">
+            <div class="title-box">
                 <h2>Introduction</h2>
             </div>
-            <div class="introduction">
-                <p>     Hello interviewers, my name is Chi-Hua Chung. I'm delighted for the opportunity to be here for this interview. I graduated from the Institute of Hospital and Health Care Administration at Yangming Chiao Tung University, specializing in machine learning and data analysis. Throughout my academic journey, I focused not only on grades but diligently honed my expertise in data analysis. I once worked as a research assistant in a hospital, an experience that profoundly revealed the value and insights that data can provide. As a result, when I enrolled at Yangming Chiao Tung University, I chose machine learning as my primary research direction. Simultaneously, I delved deeper into learning SAS, aiming to uncover the meanings behind data even further. Additionally, during my academic tenure, I actively participated in on-campus activities like thesis poster competitions and machine learning study groups. These activities not only enriched my learning experience but also offered opportunities for interaction with peers. I also took on the responsibility of managing our graduation yearbook, which sharpened my organizational and coordination skills. I hope that through this interview, I can better demonstrate my professional knowledge and potential to you. Thank you for your time, and I look forward to further discussions.
-                </p><!-- ... introduction content ... -->
-            </div>
-        </div>
+            <article class="introduction">
+                <p> 
+                    Hello interviewers, my name is Chi-Hua Chung. I'm delighted for the opportunity to be here for this interview. I graduated from the Institute of Hospital and Health Care Administration at Yangming Chiao Tung University, specializing in machine learning and data analysis. Throughout my academic journey, I focused not only on grades but diligently honed my expertise in data analysis. I once worked as a research assistant in a hospital, an experience that profoundly revealed the value and insights that data can provide. As a result, when I enrolled at Yangming Chiao Tung University, I chose machine learning as my primary research direction. Simultaneously, I delved deeper into learning SAS, aiming to uncover the meanings behind data even further. Additionally, during my academic tenure, I actively participated in on-campus activities like thesis poster competitions and machine learning study groups. These activities not only enriched my learning experience but also offered opportunities for interaction with peers. I also took on the responsibility of managing our graduation yearbook, which sharpened my organizational and coordination skills. I hope that through this interview, I can better demonstrate my professional knowledge and potential to you. Thank you for your time, and I look forward to further discussions.
+                </p>
+            </article>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <div class="footer-container">
+        <div>
             <a href="resume.html" class="footer-link">Return to homepage</a>
-            <a href="about.html" class="footer-link">中文版本</a>
+            <a href="about_en.html" class="footer-link">中文版本</a>
         </div>
-
     </footer>
 </body>
 </html>
