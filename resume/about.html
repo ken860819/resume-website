@@ -105,6 +105,32 @@
             .footer-link:hover {
                 background-color: #ff7575; /* 深一點的粉紅色為滑鼠懸停狀態 */
             }
+/* ...當前的CSS... */
+
+/* 媒體查詢，針對寬度小於600px的裝置 */
+@media (max-width: 600px) {
+    header h1, .introduction-title h2 {
+        font-size: 1.5rem; /* 縮小標題大小 */
+    }
+    
+    table, th, td {
+        font-size: 0.8rem; /* 縮小表格字體大小 */
+        padding: 5px; /* 減少填充 */
+    }
+
+    .introduction, .ducation-title {
+        width: 90%; /* 擴大寬度使其更適合小屏幕 */
+    }
+
+    .introduction {
+        font-size: 0.9rem; /* 縮小自我介紹的字體大小 */
+    }
+
+    .footer-link {
+        padding: 8px 16px; /* 調整頁腳連結的填充大小 */
+        font-size: 0.9rem; /* 調整頁腳連結的字體大小 */
+    }
+}
 
     </style>
 </head>
