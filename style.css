@@ -1,0 +1,40 @@
+/* 設定頁面的字體和背景 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 標題的樣式 */
+header h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 主要內容區域的樣式 */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 小節的樣式 */
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題的樣式 */
+h2 {
+    color: #333;
+}
+
+/* 段落的樣式 */
+p {
+    color: #666;
+}
