@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>學歷(EDUCATION)</title>
+    <title>學歷(Education)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-image: url('https://img.onl/79wykd');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         header {
             text-align: center;
@@ -25,6 +29,31 @@
         .school {
             background-color: #c1e5c1; /* 淡綠色 */
         }
+        .ducation-title {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* 透明白色背景 */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .introduction-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .introduction-title {
+            margin-top: 20px; /* 設定上方間距 */
+            line-height: 1.6;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.8); /* 顏色框框 */
+            padding: 20px;
+            border-radius: 10px;
+        }        
+        .introduction {
+            margin-top: 2em;
+            text-align : left;
+            background-color: #f2f2f2c7; 
+        }
         main {
             padding: 20px;
         }
@@ -36,7 +65,9 @@
 </head>
 <body>
     <header>
+    <div class="ducation-title">
         <h1>學歷(Education)</h1>
+    </div>
     </header>
     <main>
         <table>
@@ -54,7 +85,6 @@
                 <td>畢業(Graduate)</td>
                 <td>09/2021 - 08/2023</td>
             </tr>
-            <tr>
             <tr class="school">
                 <td>銘傳大學 (Ming Chuan University)</td>
                 <td>學士(Bachelor)</td>
@@ -62,7 +92,6 @@
                 <td>畢業(Graduate)</td>
                 <td>09/2015 - 07/2019</td>
             </tr>
-            <tr>
             <tr class="school">
                 <td>臺北市市立明倫高中 (Taipei Municipal Ming Lun High School)</td>
                 <td></td>
@@ -71,8 +100,23 @@
                 <td>09/2012 - 07/2015</td>
             </tr>
         </table>
-        <h2>自我介紹(Introduction)</h2>
-        <p>這裡放上您的自我介紹內容。</p>
+        <div class="introduction-container">
+            <div class="introduction-title">
+                <h2>自我介紹(Introduction)</h2>
+            </div>
+            <div class="introduction">
+                <p>     各位面試官好，我是鐘啟華，很高興有機會參加這次面試。我畢業於陽明交通大學醫務管理研究所，
+                    主修機器學習與數據分析。在我求學的過程中，我不僅注重學術成績，更是努力培養數據分析的專業能力。
+                    我曾在醫院擔任研究助理，這段經歷讓我深刻體會到數據的價值和洞察力。
+                    因此，我在進入陽明交通大學就讀時，選擇了機器學習作為主要的研究方向，
+                    同時也不忘記繼續深入學習SAS，為了就是希望能更深入地探索數據背後的意義。
+                    此外，就學期間除了工作之餘，我也積極參與校內活動，例如論文海報比賽和機器學習讀書會，
+                    這些活動不僅豐富了我的學習，更提供了與同學交流的機會。
+                    我也有擔任畢業紀念冊的負責人，這鍛鍊了我的組織和協調能力。
+                    我期待能透過這次面試，更深入地向您展示我的專業知識和潛力。
+                    謝謝您的時間，我期待與您進一步交流。</p>
+            </div>
+        </div>
     </main>
     <footer>
         <a href="resume.html">返回首頁</a>

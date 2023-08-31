@@ -29,7 +29,7 @@ main {
 }
 
 .section-bg {
-    background-image: url('780.jpeg'); /* 使用相對路徑 */
+    background-image: url('https://img.onl/CWX1m'); /* 使用相對路徑 */
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -40,7 +40,7 @@ h2 {
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center; /* 新增文字置中 */
-    color: black; /* 將顏色改為黑色 */
+    color: rgb(255, 255, 255); /* 將顏色改為黑色 */
 }
 
 p {
