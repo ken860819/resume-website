@@ -2,26 +2,28 @@
 <html>
 <head>
     <title>履歷或自我介紹</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- 更新為 styles.css -->
 </head>
 <body>
     <header>
-        <h1>歡迎來到我的履歷網頁！</h1>
+        <h1 class="center-text">歡迎來到我的履歷網頁！</h1>
     </header>
-    <main>
-        <section>
-            <h2>關於我(點一下下面的cv)</h2>
+    <main class="center-content"> <!-- 使用 .center-content 類名 -->
+        <section class="section-bg center-text"> <!-- 將整個區域置中 -->
+            <h2>關於我(About me - click the picture )</h2>
             <a href="about.html">
-                <img src="https://img.onl/FT4gPz" alt="點擊進入我的自我介紹">
+                <img src="https://img.onl/FT4gPz" alt="點擊進入我的自我介紹" class="center-img"> <!-- 添加 .center-img 類名以置中圖片 -->
             </a>
         </section>
-        <section>
-            <h2>經歷</h2>
-            <p>列出你過去的工作、學習經歷，以及任何重要的成就。</p>
+        <section class="section-bg center-text"> <!-- 保持 .section-bg 類名 -->
+            <h2>經歷(Experience - click the picture )</h2>
+            <a href="exp.html">
+            <img src="https://img.onl/9VN7AN" alt="點擊進入我的經歷" class="center-img"> <!-- 添加 .center-img 類名以置中圖片 -->
+            </a>
         </section>
     </main>
     <footer>
-        <p>聯絡方式：你的電子郵件地址</p>
+        <p>聯絡方式(email)：<br>eat0819eat@gmail.com / ken0819.md10@nycu.edu.tw<br>電話(phone)：0972852232</p>
     </footer>
 </body>
 </html>
